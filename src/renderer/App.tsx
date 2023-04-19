@@ -95,12 +95,14 @@ const GraphiQLWrapper = () => {
     'https://swapi-graphql.netlify.app/.netlify/functions/index';
   const [query, setQuery] = useState('');
   const [url, setURL] = useLocalStorage('graphiql-desktop:url');
-  const [schemaUrl, setSchemaURL] = useLocalStorage('graphiql-desktop:schema-url');
+  const [schemaUrl, setSchemaURL] = useLocalStorage(
+    'graphiql-desktop:schema-url'
+  );
   const fetcher = createGraphiQLFetcher({
     url: url ?? defaultUrl,
     schemaFetcher: createGraphiQLFetcher({
       url: schemaUrl ?? defaultUrl,
-    })
+    }),
   });
   const explorerPlugin = useExplorerPlugin({
     query,
