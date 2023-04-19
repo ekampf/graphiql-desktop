@@ -1,4 +1,4 @@
-# graphiql-desktop [![GitHub release](https://img.shields.io/github/v/release/nathanchapman/graphiql-desktop)](https://github.com/nathanchapman/graphiql-desktop/releases)
+# graphiql-desktop [![GitHub release](https://img.shields.io/github/v/release/ekampf/graphiql-desktop)](https://github.com/ekampf/graphiql-desktop/releases)
 
 > Electron-based desktop application for GraphiQL 2
 
@@ -6,7 +6,7 @@
 
 ## Installation
 
-Just head to the [releases](https://github.com/nathanchapman/graphiql-desktop/releases) page, download the binary for your operating system, and install.
+Just head to the [releases](https://github.com/ekampf/graphiql-desktop/releases) page, download the binary for your operating system, and install.
 
 ## Additional Features
 
