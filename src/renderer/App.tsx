@@ -91,10 +91,16 @@ const GraphiQLInterfaceWrapper = ({
 };
 
 const GraphiQLWrapper = () => {
+  const defaultUrl =
+    'https://swapi-graphql.netlify.app/.netlify/functions/index';
   const [query, setQuery] = useState('');
   const [url, setURL] = useLocalStorage('graphiql-desktop:url');
+  const [schemaUrl, setSchemaURL] = useLocalStorage('graphiql-desktop:schema-url');
   const fetcher = createGraphiQLFetcher({
-    url: url ?? 'https://swapi-graphql.netlify.app/.netlify/functions/index',
+    url: url ?? defaultUrl,
+    schemaFetcher: createGraphiQLFetcher({
+      url: schemaUrl ?? defaultUrl,
+    })
   });
   const explorerPlugin = useExplorerPlugin({
     query,
@@ -111,6 +117,13 @@ const GraphiQLWrapper = () => {
         value={url ?? undefined}
         placeholder="Endpoint URL"
         onChange={(e) => setURL(e.target.value)}
+      />
+      <input
+        type="text"
+        className="graphiql-desktop-schema-url-input"
+        value={schemaUrl ?? undefined}
+        placeholder="Schema Endpoint URL"
+        onChange={(e) => setSchemaURL(e.target.value)}
       />
       <GraphiQLProvider
         fetcher={fetcher}

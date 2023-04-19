@@ -21,7 +21,8 @@ body {
   overflow: hidden;
 }
 
-.graphiql-desktop-url-input {
+.graphiql-desktop-url-input,
+.graphiql-desktop-schema-url-input {
   margin: 2px 0 0px 60px;
   width: calc(100vw - 100px);
   height: 3rem;
@@ -34,7 +35,8 @@ body {
   overflow-x: auto;
 }
 
-.graphiql-desktop-url-input:focus {
+.graphiql-desktop-url-input:focus,
+.graphiql-desktop-schema-url-input:focus {
   outline-width: 0;
 }
 
