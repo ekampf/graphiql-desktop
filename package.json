@@ -1,12 +1,12 @@
 {
   "name": "graphiql-desktop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "Electron-based desktop application for GraphiQL 2",
-  "author": "Nathan Chapman <nathanchapman@duck.com> (http://nathanchapman.io)",
-  "repository": "github:nathanchapman/graphiql-desktop",
-  "bugs": "https://github.com/nathanchapman/graphiql-desktop/issues",
-  "homepage": "https://github.com/nathanchapman/graphiql-desktop#readme",
+  "author": "Eran Kampf (http://ekampf.com)",
+  "repository": "github:ekampf/graphiql-desktop",
+  "bugs": "https://github.com/ekampf/graphiql-desktop/issues",
+  "homepage": "https://github.com/ekampf/graphiql-desktop#readme",
   "main": "./src/main/main.ts",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
@@ -165,7 +165,7 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "nathanchapman",
+      "owner": "ekampf",
       "repo": "graphiql-desktop"
     }
   },
