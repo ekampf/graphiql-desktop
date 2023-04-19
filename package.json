@@ -24,20 +24,20 @@
     "test": "jest src/**/*.test.tsx"
   },
   "dependencies": {
-    "@graphiql/plugin-explorer": "0.1.6",
-    "@graphiql/react": "0.13.3",
-    "@graphiql/toolkit": "0.8.0",
+    "@graphiql/plugin-explorer": "^0.1.15",
+    "@graphiql/react": "^0.17.1",
+    "@graphiql/toolkit": "^0.8.3",
     "electron-debug": "3.2.0",
     "electron-log": "4.4.8",
     "electron-updater": "^5.3.0",
-    "graphiql": "2.0.9",
-    "graphql-ws": "5.11.2",
+    "graphiql": "^2.4.1",
+    "graphql-ws": "^5.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "0.5.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "6.3.1",
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.2",
     "@testing-library/jest-dom": "5.16.5",
