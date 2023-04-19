@@ -165,7 +165,7 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "nathanchapman",
+      "owner": "ekampf",
       "repo": "graphiql-desktop"
     }
   },
